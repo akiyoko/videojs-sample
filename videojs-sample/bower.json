@@ -1,0 +1,42 @@
+{
+  "name": "videojs-sample",
+  "version": "0.0.0",
+  "homepage": "https://github.com/akiyoko/videojs-sample",
+  "authors": [
+    "akiyoko blog <akiyoko@users.noreply.github.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "videojs": "~4.12.12",
+    "videojs-contrib-media-sources": "~1.0.0",
+    "videojs-contrib-hls": "~0.17.6"
+  },
+  "exportsOverride": {
+    "videojs": {
+      "js": [
+        "dist/video-js/video.js",
+        "dist/video-js/video-js.swf"
+      ],
+      "css": "dist/video-js/video-js.min.css",
+      "css/font": [
+        "dist/video-js/font/vjs.eot",
+        "dist/video-js/font/vjs.svg",
+        "dist/video-js/font/vjs.ttf",
+        "dist/video-js/font/vjs.woff"
+      ]
+    },
+    "videojs-contrib-hls": {
+      "js": "dist/videojs.hls.min.js"
+    },
+    "videojs-contrib-media-sources": {
+      "js": "src/videojs-media-sources.js"
+    }
+  }
+}
